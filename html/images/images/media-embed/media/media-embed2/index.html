@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Peter G. Morales">
+  <meta name="description" content="This is the second of three tasks for Media/Embedding for MDN Learning Area.">
+  <title>Media/embedding: Task 2</title>
+  <link rel="stylesheet" href="/media-embed2/styles/styles.css" />
+</head>
+
+<body>
+  <h1>Video Embed</h1>
+
+  <video controls muted width="320" height="240">
+    <source
+      src="https://github.com/mdn/learning-area/raw/main/html/multimedia-and-embedding/tasks/media-embed/media/video.mp4"
+      type="video/mp4">
+    <source
+      src="https://github.com/mdn/learning-area/raw/main/html/multimedia-and-embedding/tasks/media-embed/media/video.webm"
+      type="video/webm">
+    <track kind="subtitles"
+      src="https://github.com/mdn/learning-area/raw/main/html/multimedia-and-embedding/tasks/media-embed/media/subtitles_en.vtt"
+      srclang="en">
+    <p>Your browser doesn't support HTML5 video. Here is a <a
+        href="https://github.com/mdn/learning-area/raw/main/html/multimedia-and-embedding/tasks/media-embed/media/video.mp4">link
+        to the video</a>, instead.</p>
+  </video>
+</body>
+
+</html>

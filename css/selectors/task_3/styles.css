@@ -1,0 +1,52 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    width: 300px;
+}
+
+td,
+th {
+    padding: 0.2em;
+    text-align: left;
+}
+
+/* Make the first element inside the container font-size: 150% and the first line of that element red. */
+.container p:first-child {
+    font-size: 150%;
+}
+
+.container p:first-child::first-line {
+    color: red;
+}
+
+/* Style links, making the link-state orange, visited links green, and remove the underline on hover. */
+a:link {
+    color: orange;
+}
+
+
+a:visited {
+    color: green;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Stripe every other row in the table by selecting these rows and giving them a background color of #333 and foreground of white. */
+tr:nth-child(even) {
+    background-color: #333;
+    color: #fff;
+}

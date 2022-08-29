@@ -1,0 +1,36 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+.box {
+
+    /* https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_standard_css_box_model */
+    /* In the standard box model, if you give a box an inline-size and a block-size (or width and a height) attributes, 
+    this defines the inline-size and block-size (width and height in horizontal languages) of the content box. Any padding 
+    and border is then added to those dimensions to get the total size taken up by the box. The actual space taken up by 
+    the box will be 390px wide (300 + 40 + 40 + 5 + 5) and 240px high (150 + 40 + 40 + 5 + 5).*/
+
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 40px;
+    margin: 40px;
+    width: 300px;
+    height: 150px;
+}
+
+.alternate {
+
+    /* https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_alternative_css_box_model */
+    /* In the alternative box model, any width is the width of the visible box on the page. The content area width is 
+    that width minus the width for the padding and border. No need to add up the border and padding to get the real size 
+    of the box. To turn on the alternative model for an element, set box-sizing: border-box on it. Now, the actual space 
+    taken up by the box will be 390px in the inline direction and 240px in the block direction. */
+
+    box-sizing: border-box;
+    width: 390px;
+    height: 240px;
+}

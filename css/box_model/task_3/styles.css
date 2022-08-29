@@ -1,0 +1,20 @@
+  body {
+      background-color: #fff;
+      color: #333;
+      font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding: 1em;
+      margin: 0;
+  }
+
+  .box span {
+
+      /* https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#using_display_inline-block */
+      /* display: inline-block is a special value of display, which provides a middle ground between inline and block. 
+    Use it if you do not want an item to break onto a new line, but do want it to respect width and height and avoid 
+    overlapping. */
+
+      background-color: pink;
+      border: 5px solid black;
+      padding: 1em;
+      display: inline-block;
+  }

@@ -1,0 +1,21 @@
+body {
+  background-color: #fff;
+  color: #333;
+  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 1em;
+  margin: 0;
+}
+
+.box {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/border#syntax */
+  /* The border property may be specified using one, two, or three of the values listed below. The order of the values does not matter. */
+  border: 5px dotted black;
+
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/margin#syntax */
+  /* When four values are specified, the margins apply to the top, right, bottom, and left in that order (clockwise). */
+  margin: 20px 1em 40px 2em;
+
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/padding#syntax */
+  /* When one value is specified, it applies the same padding to all four sides. */
+  padding: 1em;
+}

@@ -17,7 +17,7 @@ body {
 
 /* Give the element with a class of alert a 1px grey border. */
 .alert {
-    border: 2px solid grey;
+    border: 1px solid grey;
 }
 
 /* If the element with a class of alert also has a class of stop, make the background red. */

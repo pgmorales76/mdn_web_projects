@@ -1,0 +1,31 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    /* Give the box a 5px lightblue border and round the top left corner 20px
+    and the bottom right corner 40px. */
+    width: 300px;
+    padding: 0.5em;
+    border: 5px solid lightblue;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+}
+
+h2 {
+    /* The heading uses the star.png image as a background image, with a single centered star on the left 
+    and a repeating pattern of stars on the right. Make sure that the heading text does not overlay the image,
+    and that it is centered — you will need to use techniques learned in previous lessons to achieve this. */
+    padding: 0 40px;
+    text-align: center;
+    background: url(/task_2/images/star.png) no-repeat left center,
+        url(/task_2/images/star.png) repeat-y right center;
+}

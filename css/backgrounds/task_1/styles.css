@@ -1,0 +1,28 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Give the box a 5px black solid border, with rounded corners of 10px.
+      Add a background image (use the URL balloons.jpg) and size it so that it covers the box. */
+.box {
+    width: 500px;
+    padding: 0.5em;
+    border: 5px solid #000;
+    border-radius: 10px;
+    background-image: url(/task_1/images/balloons.jpg);
+    background-size: cover;
+}
+
+/* Give the <h2> a semi-transparent black background color, and make the text white. */
+h2 {
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+}

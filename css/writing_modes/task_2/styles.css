@@ -1,0 +1,25 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+.vertical {
+    writing-mode: vertical-rl;
+}
+
+.box {
+
+    /* In this task, we want you to use logical properties to replace width 
+    and height in order to maintain the aspect ratio of the box as it is turned 
+    vertically. */
+
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 40px;
+    margin: 40px;
+    inline-size: 200px;
+    block-size: 100px;
+}

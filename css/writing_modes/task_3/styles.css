@@ -1,0 +1,27 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+.vertical {
+    writing-mode: vertical-rl;
+}
+
+.box {
+
+    /* In this task, we want you to use logical versions of the margin,
+    border, and padding properties so that the edges of the box relate 
+    to the text rather than following top, left, bottom and right. */
+
+    width: 150px;
+    height: 150px;
+    border-block-start: 5px solid rebeccapurple;
+    border-inline-end: 5px solid grey;
+    border-block-end: 5px dotted red;
+    border-inline-start: 5px dotted blue;
+    padding-block-start: 40px;
+    margin-block-end: 30px;
+}

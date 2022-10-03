@@ -1,3 +1,3 @@
 # MDN Web Projects
 
-## This webpage is the landing page for the projects I do on MDN.
+## This is the home page for the projects I complete on MDN.

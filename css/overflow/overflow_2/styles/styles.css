@@ -1,0 +1,22 @@
+/* In this task, there is an image in the box that is bigger than the
+dimensions of the box so that it overflows visibly. Change it so that 
+any image outside of the box is hidden. 
+
+In this task an image is overflowing and the student is asked to crop
+all of the image that is outside of the box. They should therefore
+use overflow: hidden.*/
+
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+.box {
+    border: 5px solid black;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+}

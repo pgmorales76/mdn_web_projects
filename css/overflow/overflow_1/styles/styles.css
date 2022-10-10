@@ -1,0 +1,24 @@
+/* In this task, the content is overflowing the box because it has a fixed height. 
+Keep the height but cause the box to have scrollbars only if there is enough text to cause an overflow. 
+Test by removing some of the text from the HTML, that if there is only a small amount of text that does 
+not overflow, no scrollbar appears. 
+
+In this task there is overflowing text content and the student is asked to cause the box to have 
+scrollbars if there is too much content. They should use overflow: auto as then the box will only
+ gain scrollbars when the content is too large.*/
+
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+.box {
+    border: 5px solid black;
+    padding: 1em;
+    height: 200px;
+    width: 300px;
+    overflow: auto;
+}

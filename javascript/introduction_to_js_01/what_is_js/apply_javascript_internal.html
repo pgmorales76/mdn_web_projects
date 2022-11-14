@@ -6,16 +6,21 @@
     <meta name="author, viewport" content="Peter G. Morales, width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="This is the 'Apply Internal Javascript' exercise for the 'What is JavaScript?' 
-        Guide of the 'javascript First Steps' Module">
+        Guide of the 'Javascript First Steps' Module">
     <title>Apply JavaScript example</title>
     <script>
 
-        // document object with addEventListener method
-        // within the addEventListener method, passed in as an argument value, is the DOMContentLoaded event
+        // The addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered
+        // to the target. Common targets are Element, or its children, Document, and Window, but the target may be any object that supports events
+        // (such as XMLHttpRequest). https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+
+        // Within the addEventListener method, passed in as the first argument value, is the DOMContentLoaded event, which fires when the initial HTML
+        // document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
         // https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 
-        // the second argument value is an anonymous function, because it doesn't have a name.
-        // an alternative way of writing anonymous functions is called an "arrow function". An arrow function uses `() =>` instead of `function ()`
+        // The second argument value is an anonymous function, because it doesn't have a name.
+        // An alternative way of writing anonymous functions is called the "arrow function".
+        // An arrow function uses `() =>` instead of `function ()`
         // https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics#events
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -32,19 +37,24 @@
                 // Passing in as an argument value to the createElement method is 'p' for paragraph tag/paragraph element
                 const para = document.createElement('p');
 
-                // using the dot notation (property accessors), chaining the textContent property of the Node interface to the para variable,
+                // Using the dot notation (property accessors), chaining the textContent property of the Node interface to the para variable,
                 // and assigning the value of 'You clicked the button!'
                 // https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent
                 para.textContent = 'You clicked the button!';
 
-                // declaring the appendChild() method of the Node interface and passing in as an argument value the para variable
+                // declaring the appendChild() method of the Node interface and passing in, as an argument value, the para variable from line 33
                 document.body.appendChild(para);
             }
 
+            // Declaring a variable named "buttons" using the const keyword, and assigning it the value of the Document method querySelectorAll(),
+            // with the HTML button element passed in as an argument value
+            // https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
             const buttons = document.querySelectorAll('button');
 
+            // for...of statement 
             for (const button of buttons) {
                 button.addEventListener('click', createParagraph);
+                console.log(button);
             }
         });
     </script>

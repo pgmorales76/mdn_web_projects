@@ -9,6 +9,7 @@
         Guide of the 'Javascript First Steps' Module">
     <title>Apply JavaScript example</title>
     <script>
+        // In this exercise, you're using DOM manipulation to add a paragraph of text by pressing a button
 
         // The addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered
         // to the target. Common targets are Element, or its children, Document, and Window, but the target may be any object that supports events
@@ -30,7 +31,7 @@
 
             // Declaring a function called "createParagraph", using the function keyword
             function createParagraph() {
-                
+
                 // 4 Steps of DOM manupilation
                 // 1. Select the parent element
                 // 2. Create a new element with document.createElement('element type')
@@ -48,10 +49,10 @@
                 // https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent
                 para.textContent = 'You clicked the button!';
 
-                // declaring the appendChild() method of the Node interface and passing in, as an argument value, the para variable from line 33
+                // declaring the appendChild() method of the Node interface and passing in, as an argument value, the `para` variable
                 document.body.appendChild(para);
 
-                // Console.log the HTML `button` element 
+                // Console.log the HTML `para` element 
                 console.log(para);
             }
 
@@ -67,7 +68,7 @@
 
                 // The statement takes the HTML `button` Event Target, and, using dot notation, adds the addEventListener() method of the EventTarget
                 // interface. Passed in as the first argument is the 'click' type, which represents the event type to listen for; passed in as the
-                // second argument value is the `createParagraph` function, which began at line 32.
+                // second argument value is the `createParagraph` function.
                 button.addEventListener('click', createParagraph);
             }
         });

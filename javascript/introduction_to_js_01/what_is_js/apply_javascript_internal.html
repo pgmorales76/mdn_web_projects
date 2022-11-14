@@ -8,7 +8,46 @@
     <meta name="description" content="This is the 'Apply Internal Javascript' exercise for the 'What is JavaScript?' 
         Guide of the 'javascript First Steps' Module">
     <title>Apply JavaScript example</title>
-    
+    <script>
+
+        // document object with addEventListener method
+        // within the addEventListener method, passed in as an argument value, is the DOMContentLoaded event
+        // https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+
+        // the second argument value is an anonymous function, because it doesn't have a name.
+        // an alternative way of writing anonymous functions is called an "arrow function". An arrow function uses `() =>` instead of `function ()`
+        // https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics#events
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // console logging to see the DOM is loaded
+            console.log('DOM fully loaded and parsed');
+
+            // Declaring a function called createParagraph using the function keyword
+            function createParagraph() {
+
+                // Declaring a variable named "para", using the "const" keyword, and assigning it the value of the createElement method (instance method)
+                // of the document constructor
+                // https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+                // Passing in as an argument value to the createElement method is 'p' for paragraph tag/paragraph element
+                const para = document.createElement('p');
+
+                // using the dot notation (property accessors), chaining the textContent property of the Node interface to the para variable,
+                // and assigning the value of 'You clicked the button!'
+                // https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent
+                para.textContent = 'You clicked the button!';
+
+                // declaring the appendChild() method of the Node interface and passing in as an argument value the para variable
+                document.body.appendChild(para);
+            }
+
+            const buttons = document.querySelectorAll('button');
+
+            for (const button of buttons) {
+                button.addEventListener('click', createParagraph);
+            }
+        });
+    </script>
 </head>
 
 <body>

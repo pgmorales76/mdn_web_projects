@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author, viewport" content="Peter G. Morales, width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="This is the tutorial from the 'A first splash into JavaScript' guide from the 'JavaScript first steps' module of MDN's JavaScript Guide">
+    <title>A First Splash into JavaScript</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/number_guessing_game.css">
+    <script src="../scripts/number_guessing_game.js" defer></script>
+</head>
+
+<body>
+    <h1>Number guessing game</h1>
+
+    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you
+        if your guess was too high or too low.</p>
+
+    <div class="form">
+        <label for="guessField">Enter a guess: </label>
+        <input type="number" min="1" max="100" required id="guessField" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+    </div>
+</body>
+
+</html>
+
+<!-- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash -->
+<!-- https://github.com/mdn/learning-area/tree/main/javascript/introduction-to-js-1/first-splash -->

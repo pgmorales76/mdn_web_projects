@@ -104,7 +104,7 @@ function setGameOver() {
 }
 
 /* This rather long block of code completely resets everything to how it was at the start of the game, so
-the player can have another go. It: puts the guessCount back down to 1, empties all the text out of the
+the player can have another go. It puts the guessCount back down to 1, empties all the text out of the
 information paragraphs, we select all paragraphs inside <div class="resultParas"></div>, then loop through
 each one, setting their textContent to '' (an empty string), removes the reset button from our code, enables
 the form elements, and empties and focuses the text field, ready for a new guess to be entered, removes the

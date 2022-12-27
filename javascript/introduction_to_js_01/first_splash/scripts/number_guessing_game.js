@@ -39,11 +39,11 @@ function checkGuess() {
     plus a blank space so there will be a space between each guess shown. */
     guesses.textContent += `${userGuess} `;
 
-    /* The first if (){ } checks whether the user's guess is equal to the randomNumber
-    set at the top of our JavaScript. If it is, the player has guessed correctly and
-    the game is won, so we show the player a congratulations message with a nice green
-    color, clear the contents of the Low/High guess information box, and run a function
-    called setGameOver(), which we'll discuss later. */
+    /* The next block does a few checks. The first if (){ } checks whether the user's
+    guess is equal to the randomNumber set at the top of our JavaScript. If it is, the
+    player has guessed correctly and the game is won. Then, we show the player a congratulations
+    message with a nice green color, clear the contents of the Low/High guess information box,
+    and run a function called setGameOver(), which we'll discuss later. */
     if (userGuess === randomNumber) {
         lastResult.textContent = 'Congratulations! You got it right!';
         lastResult.style.backgroundColor = 'green';

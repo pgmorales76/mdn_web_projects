@@ -14,6 +14,13 @@ const guessField = document.querySelector('.guessField');
 let guessCount = 1;
 let resetButton;
 
+/* The next line of code uses the focus() method to automatically put the text cursor into
+the <input> text field as soon as the page loads, meaning that the user can start typing
+their first guess right away, without having to click the form field first. It's only a
+small addition, but it improves usability — giving the user a good visual clue as to what
+they've got to do to play the game. */
+guessField.focus();
+
 function checkGuess() {
     /* The first line declares a variable called userGuess and sets its value to
     the current value entered inside the text field. We also run this value through

@@ -9,6 +9,16 @@ const lastResult = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
 
 const guessSubmit = document.querySelector('.guessSubmit');
+
+/* In the next line of code, we create a guessField constant that stores a reference to the
+text input form field in our HTML. To get this reference, we used the querySelector() method
+of the document object. querySelector() takes one piece of information — a CSS selector that
+selects the element you want a reference to. Because guessField now contains a reference to
+an <input> element, it now has access to a number of properties (basically variables stored
+inside objects, some of which can't have their values changed) and methods (basically functions
+stored inside objects). One method available to input elements is focus(). Variables that don't
+contain references to form elements won't have focus() available to them. For example, the guesses
+constant contains a reference to a <p> element, and the guessCount variable contains a number. */
 const guessField = document.querySelector('.guessField');
 
 let guessCount = 1;

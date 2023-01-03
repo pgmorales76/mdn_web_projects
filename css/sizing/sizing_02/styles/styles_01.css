@@ -1,0 +1,30 @@
+
+
+/* The container is 400 pixels wide. The student is asked to make the box 60
+percent of the container and to give it 10% of padding on all sides. All
+elements already have box-sizing: border-box to save the student worrying
+about which width they are using, and this is explained in the task instruction. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+.box {
+    border: 5px solid #000;
+    width: 400px;
+    margin-bottom: 1em;
+}
+
+.inner {
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 5px;
+}

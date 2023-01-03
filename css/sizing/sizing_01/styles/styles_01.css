@@ -1,3 +1,10 @@
+/* In this task, you have two boxes. The first should be sized so that the height will be at least 100
+pixels tall, even if there is less content that would cause it to grow to that height. However, the
+content should not overflow if there is more content than fits in 100 pixels. Test this box by removing
+the content from the HTML to make sure you still get a 100 pixel tall box even with no content.
+
+The second box should be fixed at 100 pixels tall, so that content will overflow if there is too much. */
+
 /* There are two boxes, the first should be given a minimum height, in which case it will expand
 to take the additional content but if the student removes some content the box will be at least
 as tall as the min-height. The second is given a fixed height which will cause content to overflow. */

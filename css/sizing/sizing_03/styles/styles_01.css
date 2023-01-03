@@ -1,0 +1,26 @@
+/* In this task, you have two images in boxes. One image is smaller than the box, the other is larger
+and breaking out of the box. If you imagine that the box is responsive and therefore could grow and
+shrink, which property would you apply to the image so that the large image shrinks down into the box
+but the small image does not stretch. */
+
+/* The example has an image which is breaking out of the box and one which is smaller than the box,
+the student needs to use max-width set to 100% to cause the larger image to grow only as large as the
+box. If they use width: 100% then the small image will stretch. */
+
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+.box {
+    border: 5px solid #000;
+    width: 400px;
+    margin-bottom: 1em;
+}
+
+img {
+    max-width: 100%;
+}
